@@ -40,8 +40,8 @@ public class WordServices {
         return null;
     }
 
-    public String validateCharacter(Character a){
-        if (this.currentWord)
-    }
+//    public String validateCharacter(Character a){
+//        if (this.currentWord)
+//    }
 
 }
