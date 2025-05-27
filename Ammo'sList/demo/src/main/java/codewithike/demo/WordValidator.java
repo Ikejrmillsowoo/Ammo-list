@@ -31,30 +31,30 @@ public class WordValidator {
 
     public void runGame() {
         //starts the game with prompt for input and assign
-        selectWordToGuess();
+//        selectWordToGuess();
         announceGame();
-        initializeGame(wordToGuess.length());
+        initializeGame(wordToGuess.getWordLength());
         while (numOfGuesses > 0 && !restartGame) {
             playerNextGuess();
             compareStrings();
         }
         if (restartGame) {
-            wordToGuess = "";
+//            wordToGuess = "";
             playerGuesses = ' ';
             numOfGuesses = 0;
             playerInputString = "";
             restartGame = false;
-            arr1 = new char[wordToGuess.length()];
+            arr1 = new char[wordToGuess.getWordLength()];
             runGame();
         }
 
     }
 
-    public void selectWordToGuess() {
-        int rand = (int) (Math.random() * wordBank.length);
-        wordToGuess = wordBank[rand];
-        numOfGuesses = wordBank[rand].length();
-    }
+//    public void selectWordToGuess() {
+//        int rand = (int) (Math.random() * wordBank.length);
+//        wordToGuess = wordBank[rand];
+//        numOfGuesses = wordBank[rand].length();
+//    }
 
     public void announceGame() {
         System.out.println("There is a secret word that has been selected:");

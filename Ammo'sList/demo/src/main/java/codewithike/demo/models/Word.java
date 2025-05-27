@@ -26,4 +26,8 @@ public class Word {
     public int getWordLength(){
         return this.getWord().length();
     }
+
+    public char[] toCharArray() {
+        return word.toCharArray();
+    }
 }
