@@ -7,8 +7,6 @@ import java.time.LocalDate;
 
 
 @Data
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -29,5 +27,29 @@ public class Word {
 
     public char[] toCharArray() {
         return word.toCharArray();
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getWord() {
+        return word;
+    }
+
+    public void setWord(String word) {
+        this.word = word;
+    }
+
+    public LocalDate getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(LocalDate createdAt) {
+        this.createdAt = createdAt;
     }
 }
