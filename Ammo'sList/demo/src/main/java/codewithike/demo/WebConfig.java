@@ -8,7 +8,7 @@ public class WebConfig implements WebMvcConfigurer {
         @Override
         public void addCorsMappings(CorsRegistry registry) {
             registry.addMapping("/**")
-                    .allowedOrigins("http://127.0.0.1:3000","http://192.168.6.100:3000", "http://localhost:3000", "https://ammo-list.netlify.app") // adjust to your frontend port
+                    .allowedOrigins("http://127.0.0.1:3000","http://192.168.6.100:3000","http://192.168.6.103:3000", "http://localhost:3000", "https://ammo-list.netlify.app") // adjust to your frontend port
                     .allowedMethods("GET", "POST", "PUT", "DELETE")
                     .allowedHeaders("*");
 
