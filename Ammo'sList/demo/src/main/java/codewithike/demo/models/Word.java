@@ -3,6 +3,7 @@ package codewithike.demo.models;
 import jakarta.persistence.*;
 import lombok.*;
 
+
 import java.time.LocalDate;
 
 
@@ -23,11 +24,4 @@ public class Word {
     private LocalDate createdAt;
 //   private List<Word> wordBank= new ArrayList<>();
 
-    public int getWordLength(){
-        return this.getWord().length();
-    }
-
-    public char[] toCharArray() {
-        return word.toCharArray();
-    }
 }

@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpellingforammoApplication {
+public class SpellingForAmmoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpellingforammoApplication.class, args);
+		SpringApplication.run(SpellingForAmmoApplication.class, args);
 	}
 
 }
