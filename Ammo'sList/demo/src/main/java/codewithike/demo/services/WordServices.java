@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Random;
 
 @Service
 public class WordServices {
@@ -40,8 +39,6 @@ public class WordServices {
         return null;
     }
 
-//    public String validateCharacter(Character a){
-//        if (this.currentWord)
-//    }
+
 
 }
