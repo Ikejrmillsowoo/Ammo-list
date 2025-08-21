@@ -4,6 +4,7 @@ import codewithike.demo.models.Word;
 import codewithike.demo.repository.WordRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -24,11 +25,18 @@ public class WordServices {
         return this.repository.findAll();
     }
 
-    public Word getRandomWord(){
+
+    public Word getRandomWord() {
         int randNum = repository.findAll().size();
-        int rand = (int)(Math.random() * randNum);
+        int rand = (int) (Math.random() * randNum);
         currentWord = getAllWords().get(rand);
         return getAllWords().get(rand);
+    }
+
+
+    //get last x number of words/ most recent additions
+    public List<Word> getRecentWords(){
+        return repository.findAllFromMostRecentInstant();
     }
 
     public Word createWord(Word word){
